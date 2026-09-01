@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>BizPilot - Upload Data</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="css/upload.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- TOPBAR -->
+
+<header class="topbar">
+
+    <div class="topbar-left">
+
+        <button class="mobile-menu">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="bi bi-bar-chart-fill"></i>
+            </div>
+
+            <div class="logo-text">
+                Biz<span>Pilot</span>
+            </div>
+
+        </div>
+
+        <div class="breadcrumb-text">
+            Business Intelligence / Upload Data
+        </div>
+
+    </div>
+
+
+    <div class="topbar-right">
+
+        <a
+            href="dashboard.html"
+            class="btn-secondary-custom">
+
+            Dashboard
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<div class="main-layout">
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+    <div class="sidebar-section">
+
+        <div class="sidebar-title">
+            MAIN MENU
+        </div>
+
+
+        <a
+            href="dashboard.html"
+            class="sidebar-link">
+
+            <i class="bi bi-grid-1x2-fill"></i>
+
+            <span>Dashboard</span>
+
+        </a>
+
+
+        <a
+            href="upload.html"
+            class="sidebar-link active">
+
+            <i class="bi bi-cloud-upload"></i>
+
+            <span>Upload Data</span>
+
+        </a>
+
+
+        <a
+            href="insights.html"
+            class="sidebar-link">
+
+            <i class="bi bi-lightbulb"></i>
+
+            <span>AI Insights</span>
+
+        </a>
+
+
+        <a
+            href="advisor.html"
+            class="sidebar-link">
+
+            <i class="bi bi-robot"></i>
+
+            <span>AI Advisor</span>
+
+        </a>
+
+    </div>
+
+</aside>
+
+
+
+<!-- CONTENT -->
+
+<main class="content">
+
+<div class="upload-page">
+
+
+    <div class="upload-header">
+
+        <div class="eyebrow">
+            BUSINESS DATA
+        </div>
+
+        <h1 class="page-title">
+            Upload your business data
+        </h1>
+
+        <p class="page-description">
+            Upload a CSV file containing your sales,
+            inventory or customer data.
+            BizPilot will analyze it and generate
+            actionable business insights.
+        </p>
+
+    </div>
+
+
+
+    <div class="upload-card">
+
+
+        <!-- DROP AREA -->
+
+        <div
+            class="upload-area"
+            id="uploadArea">
+
+            <div class="upload-icon">
+
+                <i class="bi bi-cloud-arrow-up"></i>
+
+            </div>
+
+
+            <h3>
+                Upload your CSV file
+            </h3>
+
+
+            <p>
+                Drag and drop your file here
+                or click to browse
+            </p>
+
+
+            <span class="upload-format">
+                CSV files only • Maximum 10 MB
+            </span>
+
+
+            <input
+                type="file"
+                id="csvFile"
+                accept=".csv"
+                hidden>
+
+        </div>
+
+
+
+        <!-- FILE INFORMATION -->
+
+        <div
+            class="file-info"
+            id="fileInfo">
+
+            <div>
+
+                <div class="file-name"
+                     id="fileName">
+                    file.csv
+                </div>
+
+                <div class="file-size"
+                     id="fileSize">
+                    0 KB
+                </div>
+
+            </div>
+
+
+            <button
+                class="btn-primary-custom"
+                id="uploadButton">
+
+                <i class="bi bi-magic"></i>
+
+                Analyze Data
+
+            </button>
+
+        </div>
+
+
+
+        <!-- PROGRESS -->
+
+        <div
+            class="upload-progress"
+            id="uploadProgress">
+
+            <div class="progress-label">
+
+                <span>
+                    Analyzing business data...
+                </span>
+
+                <span>
+                    Processing
+                </span>
+
+            </div>
+
+
+            <div class="progress-track">
+
+                <div
+                    class="progress-fill"
+                    id="progressBar">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- EXPECTED DATA -->
+
+        <div class="format-card">
+
+            <h4>
+                Recommended CSV columns
+            </h4>
+
+
+            <div class="format-list">
+
+                <span class="format-column">
+                    Date
+                </span>
+
+                <span class="format-column">
+                    Product
+                </span>
+
+                <span class="format-column">
+                    Category
+                </span>
+
+                <span class="format-column">
+                    Quantity
+                </span>
+
+                <span class="format-column">
+                    Price
+                </span>
+
+                <span class="format-column">
+                    Revenue
+                </span>
+
+                <span class="format-column">
+                    Customer
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- TRUST MESSAGE -->
+
+    <div style="
+        margin-top:15px;
+        padding:14px;
+        border-radius:10px;
+        background:#edf4eb;
+        color:#56795b;
+        font-size:8px;
+        line-height:1.7;
+    ">
+
+        <strong>
+            <i class="bi bi-shield-check"></i>
+            Your data stays secure.
+        </strong>
+
+        BizPilot uses your uploaded business data
+        only for analysis and generating insights.
+
+    </div>
+    
+
+
+</div>
+
+</main>
+
+</div>
+
+
+<script src="css/js/main.js"></script>
+    <script src="css/js/upload.js"></script>
+
+</body>
+
+</html>

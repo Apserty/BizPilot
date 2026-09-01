@@ -1,0 +1,657 @@
+/* =========================================================
+   RESPONSIVE DESIGN
+   BIZPILOT AI
+========================================================= */
+
+
+/* =========================================================
+   LARGE SCREENS
+========================================================= */
+
+@media (min-width: 1400px) {
+
+    .content {
+        padding: 40px 50px;
+    }
+
+    .page-title {
+        font-size: 30px;
+    }
+
+    .stat-grid {
+        gap: 18px;
+    }
+
+    .stat-card {
+        padding: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        padding: 25px;
+    }
+
+    .stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    /* ---------- TOPBAR ---------- */
+
+    .topbar {
+        padding: 0 20px;
+    }
+
+
+    /* ---------- SIDEBAR ---------- */
+
+    .sidebar {
+        width: 75px;
+        padding: 20px 10px;
+    }
+
+    .sidebar-title {
+        display: none;
+    }
+
+    .sidebar-link {
+        justify-content: center;
+        padding: 12px 8px;
+    }
+
+    .sidebar-link span {
+        display: none;
+    }
+
+    .sidebar-link i {
+        font-size: 16px;
+    }
+
+
+    /* ---------- CONTENT ---------- */
+
+    .content {
+        padding: 22px;
+    }
+
+
+    /* ---------- GRID ---------- */
+
+    .stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- TWO COLUMN LAYOUT ---------- */
+
+    .dashboard-grid,
+    .two-column,
+    .content-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    /* ---------- TABLE ---------- */
+
+    .table-card {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- TOPBAR ---------- */
+
+    .topbar {
+        height: 64px;
+        padding: 0 15px;
+    }
+
+    .top-user-text {
+        display: none;
+    }
+
+    .top-user {
+        margin-left: 0;
+    }
+
+
+    /* ---------- MOBILE MENU ---------- */
+
+    .mobile-menu {
+        display: flex;
+    }
+
+
+    /* ---------- SIDEBAR ---------- */
+
+    .sidebar {
+        display: none;
+    }
+
+
+    /* ---------- MAIN ---------- */
+
+    .main-layout {
+        min-height: calc(100vh - 64px);
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px 16px;
+    }
+
+
+    /* ---------- PAGE HEADER ---------- */
+
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+
+    .page-title {
+        font-size: 24px;
+    }
+
+
+    .page-description {
+        font-size: 9px;
+    }
+
+
+    /* ---------- STATS ---------- */
+
+    .stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 14px;
+    }
+
+    .stat-value {
+        font-size: 18px;
+    }
+
+
+    /* ---------- BUTTONS ---------- */
+
+    .btn-primary-custom,
+    .btn-secondary-custom {
+        min-height: 38px;
+    }
+
+
+    /* ---------- FORMS ---------- */
+
+    .form-row {
+        grid-template-columns: 1fr !important;
+    }
+
+
+    /* ---------- UPLOAD ---------- */
+
+    .upload-area {
+        padding: 30px 15px;
+    }
+
+
+    /* ---------- TABLE ---------- */
+
+    .table-card {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+        min-width: 600px;
+    }
+
+
+    /* ---------- AI ADVISOR ---------- */
+
+    .advisor-page {
+        padding: 18px 12px !important;
+    }
+
+    .chat-body {
+        height: 420px !important;
+    }
+
+    .message-content {
+        max-width: 85% !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    /* =====================================================
+       GLOBAL
+    ===================================================== */
+
+    body {
+        font-size: 13px;
+        overflow-x: hidden;
+    }
+
+
+    /* =====================================================
+       TOPBAR
+    ===================================================== */
+
+    .topbar {
+        height: 60px;
+        padding: 0 12px;
+    }
+
+    .logo-text {
+        font-size: 14px;
+    }
+
+    .logo-icon {
+        width: 31px;
+        height: 31px;
+        font-size: 14px;
+    }
+
+    .top-icon {
+        width: 31px;
+        height: 31px;
+    }
+
+    .top-user-avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    /* =====================================================
+       CONTENT
+    ===================================================== */
+
+    .content {
+        padding: 18px 12px;
+    }
+
+
+    /* =====================================================
+       PAGE HEADER
+    ===================================================== */
+
+    .page-title {
+        font-size: 21px;
+        line-height: 1.25;
+    }
+
+    .page-description {
+        font-size: 8px;
+        line-height: 1.6;
+    }
+
+
+    /* =====================================================
+       STAT CARDS
+    ===================================================== */
+
+    .stat-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .stat-card {
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .stat-card-header {
+        margin-bottom: 9px;
+    }
+
+    .stat-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .stat-label {
+        font-size: 6px;
+    }
+
+    .stat-value {
+        font-size: 16px;
+    }
+
+    .stat-change {
+        font-size: 6px;
+    }
+
+
+    /* =====================================================
+       CARDS
+    ===================================================== */
+
+    .card {
+        border-radius: 11px;
+    }
+
+
+    /* =====================================================
+       BUTTONS
+    ===================================================== */
+
+    .btn-primary-custom,
+    .btn-secondary-custom {
+        width: 100%;
+        padding: 10px 12px;
+    }
+
+
+    /* =====================================================
+       TABLE HEADER
+    ===================================================== */
+
+    .table-header {
+        padding: 13px;
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .table-header h3 {
+        font-size: 10px;
+    }
+
+
+    /* =====================================================
+       TABLE
+    ===================================================== */
+
+    .table-card {
+        border-radius: 10px;
+    }
+
+    table {
+        min-width: 550px;
+    }
+
+    thead th {
+        padding: 9px 12px;
+        font-size: 6px;
+    }
+
+    tbody td {
+        padding: 10px 12px;
+        font-size: 7px;
+    }
+
+
+    /* =====================================================
+       UPLOAD
+    ===================================================== */
+
+    .upload-area {
+        padding: 25px 12px;
+        border-radius: 11px;
+    }
+
+    .upload-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 17px;
+    }
+
+    .upload-area h3 {
+        font-size: 11px;
+    }
+
+    .upload-area p {
+        font-size: 7px;
+    }
+
+
+    /* =====================================================
+       AI CARD
+    ===================================================== */
+
+    .ai-card {
+        padding: 17px;
+        border-radius: 12px;
+    }
+
+    .ai-card h3 {
+        font-size: 12px;
+    }
+
+    .ai-card p {
+        font-size: 7px;
+    }
+
+
+    /* =====================================================
+       AI ADVISOR
+    ===================================================== */
+
+    .advisor-header h1 {
+        font-size: 21px !important;
+    }
+
+    .advisor-header p {
+        font-size: 8px !important;
+    }
+
+    .chat-card {
+        border-radius: 12px;
+    }
+
+    .chat-header {
+        padding: 12px;
+    }
+
+    .ai-avatar {
+        width: 33px;
+        height: 33px;
+        font-size: 13px;
+    }
+
+    .chat-profile strong {
+        font-size: 8px;
+    }
+
+    .chat-profile small {
+        font-size: 6px;
+    }
+
+    .chat-body {
+        height: 390px !important;
+        padding: 14px !important;
+    }
+
+    .message-content {
+        max-width: 88% !important;
+    }
+
+    .message-bubble {
+        font-size: 8px !important;
+        padding: 10px 11px !important;
+    }
+
+
+    /* =====================================================
+       QUICK QUESTIONS
+    ===================================================== */
+
+    .quick-questions {
+        padding: 11px 12px;
+    }
+
+    .question-list {
+        gap: 5px;
+    }
+
+    .question-btn {
+        font-size: 6px;
+        padding: 6px 8px;
+    }
+
+
+    /* =====================================================
+       CHAT INPUT
+    ===================================================== */
+
+    .chat-input-area {
+        padding: 11px 12px;
+    }
+
+    #questionInput {
+        font-size: 8px;
+    }
+
+    .send-button {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    /* =====================================================
+       EMPTY STATE
+    ===================================================== */
+
+    .empty-state {
+        padding: 35px 15px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .content {
+        padding: 15px 10px;
+    }
+
+
+    .stat-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .stat-card {
+        padding: 13px;
+    }
+
+
+    .page-title {
+        font-size: 19px;
+    }
+
+
+    .logo-text {
+        font-size: 13px;
+    }
+
+
+    .top-icon {
+        display: none;
+    }
+
+
+    .advisor-header h1 {
+        font-size: 19px !important;
+    }
+
+
+    .chat-body {
+        height: 360px !important;
+    }
+
+
+    .message-content {
+        max-width: 92% !important;
+    }
+
+}
+
+
+/* =========================================================
+   LANDSCAPE MOBILE
+========================================================= */
+
+@media (max-height: 500px) and (orientation: landscape) {
+
+    .topbar {
+        height: 55px;
+    }
+
+    .chat-body {
+        height: 280px !important;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+
+        scroll-behavior: auto !important;
+
+    }
+
+}

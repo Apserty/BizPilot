@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>BizPilot - Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="css/dashboard.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     TOPBAR
+===================================================== -->
+
+<header class="topbar">
+
+    <div class="topbar-left">
+
+        <button class="mobile-menu">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="bi bi-bar-chart-fill"></i>
+            </div>
+
+            <div class="logo-text">
+                Biz<span>Pilot</span>
+            </div>
+
+        </div>
+
+        <div class="breadcrumb-text">
+            Business Intelligence / Dashboard
+        </div>
+
+    </div>
+
+
+    <div class="topbar-right">
+
+        <button class="top-icon notification">
+            <i class="bi bi-bell"></i>
+            <span></span>
+        </button>
+
+        <div class="top-user">
+
+            <div class="top-user-avatar">
+                JD
+            </div>
+
+            <div class="top-user-text">
+
+                <strong>
+                    John Doe
+                </strong>
+
+                <small>
+                    Business Owner
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN LAYOUT
+===================================================== -->
+
+<div class="main-layout">
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+    <div class="sidebar-section">
+
+        <div class="sidebar-title">
+            MAIN MENU
+        </div>
+
+
+        <a
+            href="dashboard.html"
+            class="sidebar-link active">
+
+            <i class="bi bi-grid-1x2-fill"></i>
+
+            <span>
+                Dashboard
+            </span>
+
+        </a>
+
+
+        <a
+            href="upload.html"
+            class="sidebar-link">
+
+            <i class="bi bi-cloud-upload"></i>
+
+            <span>
+                Upload Data
+            </span>
+
+        </a>
+
+
+        <a
+            href="insights.html"
+            class="sidebar-link">
+
+            <i class="bi bi-lightbulb"></i>
+
+            <span>
+                AI Insights
+            </span>
+
+        </a>
+
+
+        <a
+            href="advisor.html"
+            class="sidebar-link">
+
+            <i class="bi bi-robot"></i>
+
+            <span>
+                AI Advisor
+            </span>
+
+        </a>
+
+    </div>
+
+
+    <div class="sidebar-section">
+
+        <div class="sidebar-title">
+            BUSINESS
+        </div>
+
+
+        <a
+            href="dashboard.html"
+            class="sidebar-link">
+
+            <i class="bi bi-graph-up"></i>
+
+            <span>
+                Performance
+            </span>
+
+        </a>
+
+
+        <a
+            href="dashboard.html"
+            class="sidebar-link">
+
+            <i class="bi bi-box-seam"></i>
+
+            <span>
+                Inventory
+            </span>
+
+        </a>
+
+
+        <a
+            href="dashboard.html"
+            class="sidebar-link">
+
+            <i class="bi bi-people"></i>
+
+            <span>
+                Customers
+            </span>
+
+        </a>
+
+    </div>
+
+</aside>
+
+
+
+<!-- =====================================================
+     CONTENT
+===================================================== -->
+
+<main class="content">
+
+<div class="dashboard-content">
+
+
+<!-- HEADER -->
+
+<div class="dashboard-header">
+
+    <div>
+
+        <div class="eyebrow">
+            BUSINESS OVERVIEW
+        </div>
+
+        <h1 class="page-title">
+            Good morning, John 👋
+        </h1>
+
+        <p class="page-description">
+            Here's what's happening with your business today.
+        </p>
+
+    </div>
+
+
+    <div class="header-actions">
+
+        <a
+            href="upload.html"
+            class="btn-secondary-custom">
+
+            <i class="bi bi-upload"></i>
+
+            Upload Data
+
+        </a>
+
+
+        <a
+            href="advisor.html"
+            class="btn-primary-custom">
+
+            <i class="bi bi-robot"></i>
+
+            Ask AI Advisor
+
+        </a>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     STAT CARDS
+===================================================== -->
+
+<div class="dashboard-stats">
+
+
+    <!-- REVENUE -->
+
+    <div class="dashboard-stat">
+
+        <div class="dashboard-stat-top">
+
+            <div class="dashboard-stat-icon">
+                <i class="bi bi-currency-rupee"></i>
+            </div>
+
+            <span class="badge-custom badge-success">
+                Data-backed
+            </span>
+
+        </div>
+
+        <div class="dashboard-stat-label">
+            Total Revenue
+        </div>
+
+        <div
+            class="dashboard-stat-value"
+            id="totalRevenue">
+
+            ₹0
+
+        </div>
+
+        <div class="dashboard-stat-change change-positive">
+            Calculated from uploaded data
+        </div>
+
+    </div>
+
+
+
+    <!-- ORDERS -->
+
+    <div class="dashboard-stat">
+
+        <div class="dashboard-stat-top">
+
+            <div class="dashboard-stat-icon">
+                <i class="bi bi-cart3"></i>
+            </div>
+
+            <span class="badge-custom badge-success">
+                Data-backed
+            </span>
+
+        </div>
+
+        <div class="dashboard-stat-label">
+            Total Orders
+        </div>
+
+        <div
+            class="dashboard-stat-value"
+            id="totalOrders">
+
+            0
+
+        </div>
+
+        <div class="dashboard-stat-change change-positive">
+            Calculated from uploaded data
+        </div>
+
+    </div>
+
+
+
+    <!-- CUSTOMERS -->
+
+    <div class="dashboard-stat">
+
+        <div class="dashboard-stat-top">
+
+            <div class="dashboard-stat-icon">
+                <i class="bi bi-people"></i>
+            </div>
+
+            <span class="badge-custom badge-success">
+                Data-backed
+            </span>
+
+        </div>
+
+        <div class="dashboard-stat-label">
+            Customers
+        </div>
+
+        <div
+            class="dashboard-stat-value"
+            id="totalCustomers">
+
+            0
+
+        </div>
+
+        <div class="dashboard-stat-change change-positive">
+            Calculated from uploaded data
+        </div>
+
+    </div>
+
+
+
+    <!-- STOCK -->
+
+    <div class="dashboard-stat">
+
+        <div class="dashboard-stat-top">
+
+            <div class="dashboard-stat-icon">
+                <i class="bi bi-box-seam"></i>
+            </div>
+
+            <span class="badge-custom badge-danger">
+                Review
+            </span>
+
+        </div>
+
+        <div class="dashboard-stat-label">
+            Low Stock Items
+        </div>
+
+        <div
+            class="dashboard-stat-value"
+            id="lowStock">
+
+            0
+
+        </div>
+
+        <div class="dashboard-stat-change change-negative">
+            Based on uploaded inventory
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     CHART + HEALTH
+===================================================== -->
+
+<div class="dashboard-main-grid">
+
+
+    <!-- SALES CHART -->
+
+    <div class="dashboard-card sales-card">
+
+        <div class="dashboard-card-header">
+
+            <div>
+
+                <h2 class="dashboard-card-title">
+                    Revenue Overview
+                </h2>
+
+                <div class="dashboard-card-subtitle">
+                    Monthly revenue performance
+                </div>
+
+            </div>
+
+
+            <select
+                style="
+                    border:1px solid #e1e7e0;
+                    padding:6px 9px;
+                    border-radius:6px;
+                    font-size:7px;
+                ">
+
+                <option>
+                    Last 6 months
+                </option>
+
+                <option>
+                    Last year
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="chart-area">
+
+            <div class="chart-grid">
+
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
+
+            </div>
+
+
+            <div class="chart-bars">
+
+                <div class="chart-bar-group">
+
+                    <div
+                        class="chart-bar secondary"
+                        style="height:45%;">
+                    </div>
+
+                    <div
+                        class="chart-bar"
+                        style="height:58%;">
+                    </div>
+
+                </div>
+
+
+                <div class="chart-bar-group">
+
+                    <div
+                        class="chart-bar secondary"
+                        style="height:50%;">
+                    </div>
+
+                    <div
+                        class="chart-bar"
+                        style="height:66%;">
+                    </div>
+
+                </div>
+
+
+                <div class="chart-bar-group">
+
+                    <div
+                        class="chart-bar secondary"
+                        style="height:62%;">
+                    </div>
+
+                    <div
+                        class="chart-bar"
+                        style="height:73%;">
+                    </div>
+
+                </div>
+
+
+                <div class="chart-bar-group">
+
+                    <div
+                        class="chart-bar secondary"
+                        style="height:55%;">
+                    </div>
+
+                    <div
+                        class="chart-bar"
+                        style="height:78%;">
+                    </div>
+
+                </div>
+
+
+                <div class="chart-bar-group">
+
+                    <div
+                        class="chart-bar secondary"
+                        style="height:68%;">
+                    </div>
+
+                    <div
+                        class="chart-bar"
+                        style="height:84%;">
+                    </div>
+
+                </div>
+
+
+                <div class="chart-bar-group">
+
+                    <div
+                        class="chart-bar secondary"
+                        style="height:74%;">
+                    </div>
+
+                    <div
+                        class="chart-bar"
+                        style="height:94%;">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="chart-labels">
+
+                <span>Apr</span>
+                <span>May</span>
+                <span>Jun</span>
+                <span>Jul</span>
+                <span>Aug</span>
+                <span>Sep</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- BUSINESS HEALTH -->
+
+    <div class="dashboard-card">
+
+        <div class="dashboard-card-header">
+
+            <div>
+
+                <h2 class="dashboard-card-title">
+                    Business Health
+                </h2>
+
+                <div class="dashboard-card-subtitle">
+                    Overall performance score
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="health-body">
+
+            <div class="health-circle">
+
+                <div class="health-number">
+
+                    <strong id="healthScore">
+                        82
+                    </strong>
+
+                    <span>
+                        / 100
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="health-status">
+                Healthy Business
+            </div>
+
+            <div class="health-description">
+                Your business is performing well,
+                but there are opportunities to improve.
+            </div>
+
+        </div>
+
+
+        <div class="health-items">
+
+            <div class="health-item">
+
+                <span class="health-item-name">
+                    Revenue
+                </span>
+
+                <span class="health-item-score">
+                    91%
+                </span>
+
+            </div>
+
+
+            <div class="health-item">
+
+                <span class="health-item-name">
+                    Customer Growth
+                </span>
+
+                <span class="health-item-score">
+                    84%
+                </span>
+
+            </div>
+
+
+            <div class="health-item">
+
+                <span class="health-item-name">
+                    Inventory
+                </span>
+
+                <span class="health-item-score">
+                    76%
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     AI INSIGHTS
+===================================================== -->
+
+<div class="insights-grid">
+
+
+    <div class="insight-card">
+
+        <div class="insight-top">
+
+            <div class="insight-icon">
+                <i class="bi bi-lightbulb"></i>
+            </div>
+
+            <span class="insight-type">
+                Opportunity
+            </span>
+
+        </div>
+
+        <div class="insight-title">
+            Product A is your fastest-growing product
+        </div>
+
+        <div class="insight-description">
+            Sales increased significantly during
+            the last 30 days.
+        </div>
+
+        <a
+            href="insights.html"
+            class="insight-action">
+
+            View insight →
+
+        </a>
+
+    </div>
+
+
+
+    <div class="insight-card">
+
+        <div class="insight-top">
+
+            <div class="insight-icon">
+                <i class="bi bi-exclamation-triangle"></i>
+            </div>
+
+            <span class="insight-type">
+                Risk
+            </span>
+
+        </div>
+
+        <div class="insight-title">
+            7 products are running low on stock
+        </div>
+
+        <div class="insight-description">
+            Restocking these products could
+            prevent missed sales.
+        </div>
+
+        <a
+            href="insights.html"
+            class="insight-action">
+
+            View recommendation →
+
+        </a>
+
+    </div>
+
+
+
+    <div class="insight-card">
+
+        <div class="insight-top">
+
+            <div class="insight-icon">
+                <i class="bi bi-people"></i>
+            </div>
+
+            <span class="insight-type">
+                Customer
+            </span>
+
+        </div>
+
+        <div class="insight-title">
+            Repeat customers generate higher revenue
+        </div>
+
+        <div class="insight-description">
+            Consider creating a loyalty strategy
+            to increase repeat purchases.
+        </div>
+
+        <a
+            href="advisor.html"
+            class="insight-action">
+
+            Ask AI Advisor →
+
+        </a>
+
+    </div>
+
+</div>
+
+
+</div>
+
+</main>
+
+</div>
+
+
+<script src="css/js/main.js"></script>
+    <script src="css/js/dashboard.js"></script>
+
+</body>
+
+</html>

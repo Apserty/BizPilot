@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>BizPilot - AI Advisor</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="css/advisor.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- TOPBAR -->
+
+<header class="topbar">
+
+    <div class="topbar-left">
+
+        <button class="mobile-menu">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="bi bi-bar-chart-fill"></i>
+            </div>
+
+            <div class="logo-text">
+                Biz<span>Pilot</span>
+            </div>
+
+        </div>
+
+        <div class="breadcrumb-text">
+            Business Intelligence / AI Advisor
+        </div>
+
+    </div>
+
+
+    <div class="topbar-right">
+
+        <a
+            href="dashboard.html"
+            class="btn-secondary-custom">
+
+            Dashboard
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<div class="main-layout">
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+    <div class="sidebar-section">
+
+        <div class="sidebar-title">
+            MAIN MENU
+        </div>
+
+
+        <a
+            href="dashboard.html"
+            class="sidebar-link">
+
+            <i class="bi bi-grid-1x2-fill"></i>
+
+            <span>Dashboard</span>
+
+        </a>
+
+
+        <a
+            href="upload.html"
+            class="sidebar-link">
+
+            <i class="bi bi-cloud-upload"></i>
+
+            <span>Upload Data</span>
+
+        </a>
+
+
+        <a
+            href="insights.html"
+            class="sidebar-link">
+
+            <i class="bi bi-lightbulb"></i>
+
+            <span>AI Insights</span>
+
+        </a>
+
+
+        <a
+            href="advisor.html"
+            class="sidebar-link active">
+
+            <i class="bi bi-robot"></i>
+
+            <span>AI Advisor</span>
+
+        </a>
+
+    </div>
+
+</aside>
+
+
+
+<!-- CONTENT -->
+
+<main class="content">
+
+<div class="advisor-page">
+
+
+    <!-- HEADER -->
+
+    <div class="advisor-header">
+
+        <div class="eyebrow">
+            AI BUSINESS ASSISTANT
+        </div>
+
+        <h1>
+            Ask your Business Advisor
+        </h1>
+
+        <p>
+            Get practical answers based on your
+            business performance and data.
+        </p>
+
+    </div>
+
+
+
+    <!-- CHAT -->
+
+    <div class="chat-card">
+
+
+        <!-- CHAT HEADER -->
+
+        <div class="chat-header">
+
+            <div class="ai-avatar">
+
+                <i class="bi bi-robot"></i>
+
+            </div>
+
+
+            <div class="chat-profile">
+
+                <strong>
+                    BizPilot AI Advisor
+                </strong>
+
+                <small>
+                    Your intelligent business assistant
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CHAT BODY -->
+
+        <div
+            class="chat-body"
+            id="chatBody">
+
+
+            <!-- AI MESSAGE -->
+
+            <div class="message ai">
+
+                <div class="message-content">
+
+                    <div class="message-bubble">
+
+                        Hello! 👋 I'm your BizPilot
+                        business advisor.
+
+                        <br><br>
+
+                        I can help you understand
+                        your sales, revenue, inventory,
+                        customers and growth opportunities.
+
+                        <br><br>
+
+                        What would you like to know?
+
+                    </div>
+
+
+                    <div class="message-time">
+                        Just now
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- QUICK QUESTIONS -->
+
+        <div class="quick-questions">
+
+            <div class="quick-title">
+                QUICK QUESTIONS
+            </div>
+
+
+            <div class="question-list">
+
+                <button class="question-btn">
+                    How can I increase sales?
+                </button>
+
+                <button class="question-btn">
+                    Which products should I restock?
+                </button>
+
+                <button class="question-btn">
+                    How can I improve profit?
+                </button>
+
+                <button class="question-btn">
+                    How do I retain customers?
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- INPUT -->
+
+        <div class="chat-input-area">
+
+            <input
+                type="text"
+                id="questionInput"
+                class="chat-input"
+                placeholder="Ask something about your business...">
+
+
+            <button
+                id="sendButton"
+                class="send-button">
+
+                <i class="bi bi-send-fill"></i>
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+</main>
+
+</div>
+
+
+<script src="css/js/main.js"></script>
+    <script src="css/js/advisor.js"></script>
+
+</body>
+
+</html>
